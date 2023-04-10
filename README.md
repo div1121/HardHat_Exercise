@@ -1,5 +1,4 @@
-# Sample Hardhat Project
-
+# Sample Hardhat Project for Assignment (ref: https://github.com/LIYANG-UST/bnbcamp0329)
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
 
 Try running some of the following tasks:

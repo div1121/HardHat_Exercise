@@ -10,6 +10,10 @@ contract StandardImpl {
 
     uint256 public value;
 
+    uint256 public update;
+    string public hashValue = "123";
+    uint256[2] public updates = [1, 2];
+
     modifier initializer() {
         require(!initialized, "Only initialize once");
         _;
@@ -22,5 +26,9 @@ contract StandardImpl {
 
     function setValue(uint256 _newValue) public {
         value = _newValue + 10;
+    }
+
+    function setUpdate(uint256 _newValue) public {
+        update = _newValue;
     }
 }

@@ -33,14 +33,12 @@ const config: HardhatUserConfig = {
     localhost: {
       url: "http://localhost:8545",
     },
-    goerli: {
-      url: "https://goerli.infura.io/v3/" + process.env.INFURA_KEY,
-      accounts:
-        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-      // {
-      //  mnemonic: process.env.MNEMONIC,
-      //  count: 20,
-      //}
+    bnbtest: {
+      url: "https://data-seed-prebsc-1-s1.binance.org:8545/",
+      accounts: {
+        mnemonic: process.env.MNEMONIC,
+        count: 10,
+      },
     },
   },
   paths: {
